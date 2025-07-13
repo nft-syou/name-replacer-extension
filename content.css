@@ -1,0 +1,20 @@
+/* 即座に非表示にする */
+html {
+  visibility: hidden !important;
+}
+
+html.name-replacer-ready {
+  visibility: visible !important;
+}
+
+/* 追加の保護 */
+body.name-replacer-loading {
+  opacity: 0 !important;
+  transition: none !important;
+}
+
+body.name-replacer-ready {
+  opacity: 1 !important;
+  transition: opacity 0.1s ease-in !important;
+}
+
