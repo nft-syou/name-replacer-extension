@@ -1,9 +1,13 @@
-/* 即座に非表示にする */
-html {
+/* 即座に非表示にする - 条件付き */
+html:not(.name-replacer-ready):not(.name-replacer-skip) {
   visibility: hidden !important;
 }
 
 html.name-replacer-ready {
+  visibility: visible !important;
+}
+
+html.name-replacer-skip {
   visibility: visible !important;
 }
 
